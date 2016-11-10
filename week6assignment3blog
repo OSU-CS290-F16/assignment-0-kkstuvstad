@@ -1,0 +1,38 @@
+<html>
+  
+<head> Blog Post for Assignment 3, 11/9/2016</head>
+  
+<body>
+  
+<p>- What was challenging about the assignment, and what specific kinds of problems did you have. How did you solve those problems?</p> 
+  
+<p>The most challenging was getting the code to read each file in the public folder. Initially, I had the files being read asynchronously, but the files were
+not being recognized. They were being declared and read asynchronously under the createServer function that I had, but I did not have a function to write
+the files. As a result, the server did not recognize the files and the webpage would not load. Using other resources mentioned below as well as notes in 
+class, I created a variable for each file that read its respective file synchronously, and later used the function resp.write(); to display the files.</p>
+  
+<p>- What did you learn from the assignment? Were there any special insights you had? What did you find that you already knew?</p>
+  
+<p>The biggest thing I learned from the assignment was how to read files synchronously and asynchronously, as well as how to use node.js to run a server 
+locally. I figured out that reading each file synchronously for this particular assignment was better than reading each file asynchronously because it allows
+the server to display one file at a time without it being a jumbled mess if I read all the files at the same time.</p>
+  
+<p>- What kinds of resources were helpful for completing the assignment? Specific websites? Lectures? The class Piazza forum? The TAs? 
+
+How did you use each of these resources?</p>
+
+<p>The resources I found most effective for this assignment included topics in Piazza on how to use node.js commandsreturn status codes, as well as how to 
+read a certain file from the public folder. In addition, I asked the professor and one of the 
+TAs for help on how to get the server to read files 
+asynchronously and how to display them. I used all of these resources 
+to write my code for the server to display the files once I connected to an internet 
+browser.</p>
+  
+<p>- What are one or two things you had to Google to complete the assignment?</p>
+  
+<p>I found an article on the internet on how to use callbacks in node.js to read and display files. This article was on a website called Tutorials Point. The
+article helped me better understand how to write blocking and non-blocking code to read files synchronously and asynchronously.</p>
+  
+</body>
+
+</html>
